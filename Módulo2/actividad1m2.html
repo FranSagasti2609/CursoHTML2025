@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        .contenedor {
+        width: 100%;
+        height: 300px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    @media (max-width: 768px){
+    .contenedor{
+        background-color: aquamarine;
+    }
+}
+
+@media (min-width: 1024px){
+    .contenedor{
+        background-color:brown;
+    }
+}
+
+
+     </style>
+</head>
+    <body>
+        <div class="contenedor">
+            Media Queries Cambiando Colores
+        </div>
+    </body>
+</html>

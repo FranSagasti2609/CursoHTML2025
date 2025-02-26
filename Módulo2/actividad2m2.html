@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+        .contenedor {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+        p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    @media (min-width: 767px){
+        .contenedor{
+            text-align: justify;
+        }
+    }
+    @media (max-width: 769px){
+        .contenedor{
+            text-align:center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        aliquet, arcu non feugiat vestibulum, tortor
+        risus sollicitudin quam, vel commodo libero elit et ex.
+        <p>Fusce nec malesuada libero. Vivamus euismod justo a sem dictum
+        varius. Suspendisse potenti. <p>
+        <p>Phasellus vitae efficitur sem, nec eleifend quam. Etiam
+        ultrices, mauris sit amet facilisis
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <title>Elementos Ocultos con Media Queries</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        .elemento-oculto {
+        display: block;
+        margin: 20px;
+        padding: 20px;
+        background-color: lightblue;
+        }
+        @media (max-width: 768px){
+            .elemento-oculto{
+                visibility: hidden;
+            }
+        }
+</style>
+
+</head>
+    <body>
+        <div class="elemento-oculto">
+            Este es un elemento que se oculta en pantallas estrechas (menos
+            de 768 píxeles) y se muestra en pantallas más anchas.
+        </div>
+    <p>Este es un párrafo visible en todas las pantallas.</p>
+        <div class="elemento-oculto">
+            Otro elemento oculto en pantallas estrechas y visible en
+            pantallas más anchas.
+        </div>
+    </body>
+
+</html>
