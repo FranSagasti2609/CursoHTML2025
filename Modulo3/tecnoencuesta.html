@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Registro para el evento de tecnologia, robotica e IA</h1>
+        <form id="registro-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <br><br>
+            
+            <label> Area de interes:</label>
+            <div class="radio-group">
+                <input type="radio" id="tecnologia-cuantica" name="area-interes" value="Tecnologia Cuantica">
+                <label for="tecnologia-cuantica"> Tecnologia Cuantica</label>
+
+                <input type="radio" id="robotica-avanzada" name="area-interes" value="Robotica Avanzada">
+                <label for="robotica-avanzada"> Robotica Avanzada</label>
+
+                <input type="radio" id="etica-ia" name="area-interes" value="Etica en la IA">
+                <label for="etica-ia"> Etica en la IA</label>
+                
+                
+            </div>
+
+            <br>
+            <label for="experiencia"> Nivel de Experiencia:</label>
+            <select id="experiencia" name="experiencia" required>
+                <option value="Principiante">Principiante</option>
+                <option value="Intermedio">Intermedio</option>
+                <option value="Avanzado">Avanzado</option>
+                <option value="Experto">Experto</option>
+            </select>
+
+            <label for="suscripcion">Suscribirse al boletin informativo</label>
+            <input type="checkbox" id="suscripcion" name="suscripcion">
+
+            <button type="submit">Registrarse</button>
+            <p id="mensaje-confirmacion" style="white-space: pre-line; font-weight: bold;"></p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
